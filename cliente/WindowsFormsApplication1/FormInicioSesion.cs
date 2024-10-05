@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IPAddress direc = IPAddress.Parse("192.168.1.37");                                                        //Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
+            IPAddress direc = IPAddress.Parse("192.168.56.102");                                                        //Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
             IPEndPoint ipep = new IPEndPoint(direc, 50000);
 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);                       //Creamos Socket
