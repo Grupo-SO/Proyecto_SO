@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\share\\Proyecto\\cliente\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formcambiarpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcambiarpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formcambiarpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcambiarpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formpantallainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formpantallainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formpantallainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formpantallainicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormCambiarPass.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCambiarPass.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCambiarPass.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCambiarPass.cs",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCambiarPass.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwDMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:22:20.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormInicioSesion.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInicioSesion.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormInicioSesion.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:32:40.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCrearUsuario.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwE8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T10:51:12.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormCrearUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCrearUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:21:56.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormCambiarPass.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCambiarPass.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCambiarPass.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCambiarPass.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCambiarPass.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:16:21.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormPantallaInicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormPantallaInicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormPantallaInicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T07:53:08.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormInicioSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInicioSesion.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormInicioSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T06:13:23.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormPantallaInicio.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormPantallaInicio.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA6wDIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T21:00:41.037Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
