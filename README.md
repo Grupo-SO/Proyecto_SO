@@ -8,4 +8,4 @@ esté ubicado en la misma carpeta que el archivo Servidor.c, pues contiene todas
 
 Link del vídeo (por Adrià Sancho): https://drive.google.com/file/d/1s2f-D0f24kfd1uPjDXSAGwhHYptINtJJ/view?usp=sharing
 _______________________________________________________________________________________________________________________________________
-Código escrito por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
+Proyecto desarrollado por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
