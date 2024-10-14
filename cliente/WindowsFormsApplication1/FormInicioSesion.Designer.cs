@@ -35,9 +35,9 @@
             this.contraseñaTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contar_usuariosButton = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.pass_olvidadaButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -139,6 +139,18 @@
             this.panel1.Size = new System.Drawing.Size(569, 873);
             this.panel1.TabIndex = 12;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(36, 719);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(451, 61);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Player code: 7733";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.logo;
@@ -158,18 +170,6 @@
             this.contar_usuariosButton.Text = "ContarUsuarios";
             this.contar_usuariosButton.UseVisualStyleBackColor = true;
             this.contar_usuariosButton.Click += new System.EventHandler(this.contar_usuariosButton_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(36, 719);
-            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(451, 61);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Player code: 7733";
             // 
             // pass_olvidadaButton
             // 
@@ -196,10 +196,9 @@
             this.Controls.Add(this.crearusuarioButton);
             this.Controls.Add(this.contraseñaTextBox);
             this.Controls.Add(this.usuarioTextBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "FormInicioSesion";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);

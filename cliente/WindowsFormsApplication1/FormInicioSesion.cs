@@ -13,7 +13,7 @@ namespace WindowsFormsApplication1
 {
     public partial class FormInicioSesion : Form
     {
-        Socket server;                                                                                                  //Creamos objeto de la clase Socket (librerias)
+        Socket server;                                                                                            //Creamos objeto de la clase Socket (librerias)
         public FormInicioSesion()
         {
             InitializeComponent();
@@ -21,8 +21,9 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            IPAddress direc = IPAddress.Parse("192.168.1.37");                                                        //Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
-            IPEndPoint ipep = new IPEndPoint(direc, 50000);
+            
+            IPAddress direc = IPAddress.Parse("83.42.10.116");                                                    //Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
+            IPEndPoint ipep = new IPEndPoint(direc, 20518);
 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);                       //Creamos Socket
             try
@@ -105,8 +106,7 @@ namespace WindowsFormsApplication1
 
                 if (respuesta == "OK")
                 {
-                    FormInterfaz formInterfaz = new FormInterfaz();
-                    formInterfaz.ShowDialog();
+                    return;
                 }
                 if (respuesta == "ERROR")
                 {
