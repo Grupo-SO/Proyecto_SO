@@ -10,8 +10,8 @@ conectados.
 - Link al vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing
 ____________________________________________________________________________________________________________________________________________
 
-Versión 2 generada por Óscar, Iván, Adrià (los dos primeros cliente y el último servidor)
-Versión 2 verificada por Adrià, Ivan, Arnau
-Versión 2 comunicada por Iván, Óscar
+- Versión 2 generada por Óscar, Iván, Adrià (los dos primeros cliente y el último servidor)
+- Versión 2 verificada por Adrià, Ivan, Arnau
+- Versión 2 comunicada por Iván, Óscar
 
 Proyecto desarrollado por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
