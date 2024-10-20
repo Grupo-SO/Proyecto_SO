@@ -12,7 +12,7 @@ Para probar el cliente, cambiad la dirección IP del servidor en el form "FormIn
 - Link al vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing
 ____________________________________________________________________________________________________________________________________________
 
-- Versión 2 generada por Óscar, Iván, Adrià (los dos primeros cliente y el último servidor)
+- Versión 2 subida por Óscar
 - Versión 2 verificada por Adrià, Ivan, Arnau
 - Versión 2 comunicada por Iván, Óscar
 
