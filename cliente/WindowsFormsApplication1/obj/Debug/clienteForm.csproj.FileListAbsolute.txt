@@ -111,3 +111,21 @@ C:\Users\rigol\Desktop\Proyecto(1)\Proyecto\cliente\WindowsFormsApplication1\obj
 C:\Users\rigol\Desktop\Proyecto(1)\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
 C:\Users\rigol\Desktop\Proyecto(1)\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\rigol\Desktop\Proyecto(1)\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.dll
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.pdb
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.AssemblyReference.cache
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormCambiarPass.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormInicioSesion.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormCrearUsuario.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormPantallaInicio.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.GenerateResource.cache
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteForm.csproj.CoreCompileInputs.cache
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteF.7CC6B152.Up2Date
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormGame.resources
+C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormInterfaz.resources

@@ -14,11 +14,13 @@ namespace WindowsFormsApplication1
 {
     public partial class FormCrearUsuario : Form
     {
+        //=========================================================================================================================\\
+        //======================================================= ATRIBUTOS =======================================================\\
+
         private Socket server;
-        public FormCrearUsuario()
-        {
-            InitializeComponent();
-        }
+
+        //=========================================================================================================================\\
+        //======================================================== MÉTODOS ========================================================\\
 
         public FormCrearUsuario(Socket serverSocket)
         {
@@ -30,11 +32,11 @@ namespace WindowsFormsApplication1
         {
             try
             {
-                string mensaje = "CREAR_BD";                                                                                //Mensaje al server para que sepa que hacer y enviamos
+                string mensaje = "CREAR_BD"; // Mensaje al server para que sepa que hacer y enviamos
                 byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
                 server.Send(msg);
 
-                byte[] buffer = new byte[256];                                                                              //Recibimos respuesta
+                byte[] buffer = new byte[256]; // Recibimos respuesta
                 int bytesRecibidos = server.Receive(buffer);
                 string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
                 MessageBox.Show("Respuesta del servidor: " + respuesta);
@@ -60,12 +62,12 @@ namespace WindowsFormsApplication1
             {
                 string msgUsuario = inserta_usuarioTextBox.Text;
                 string msgContraseña = inserta_contraseñaTextBox.Text;
-                string mensaje = "ADD_USER/" + msgUsuario + "/" + msgContraseña;                                            //Mensaje al server para que sepa que hacer
+                string mensaje = "ADD_USER/" + msgUsuario + "/" + msgContraseña; // Mensaje al server para que sepa que hacer
 
-                byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);                                                  //Enviamos en bytes
+                byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje); // Enviamos en bytes
                 server.Send(msg);
 
-                byte[] buffer = new byte[256];                                                                              //Recibimos
+                byte[] buffer = new byte[256]; // Recibimos
                 int bytesRecibidos = server.Receive(buffer);
                 string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
                 MessageBox.Show("Respuesta del servidor: " + respuesta);
@@ -85,5 +87,9 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void FormCrearUsuario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

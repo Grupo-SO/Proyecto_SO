@@ -6,17 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace WindowsFormsApplication1
 {
     public partial class FormPantallaInicio : Form
     {
+        //=========================================================================================================================\\
+        //======================================================= ATRIBUTOS =======================================================\\
+
+        //=========================================================================================================================\\
+        //======================================================== MÉTODOS ========================================================\\
         public FormPantallaInicio()
         {
             InitializeComponent();
         }
-
 
         private void FormPantallaInicio_Load(object sender, EventArgs e)
         {

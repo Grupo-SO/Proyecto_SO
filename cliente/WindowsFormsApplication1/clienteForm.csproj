@@ -77,6 +77,12 @@
     <Compile Include="FormCrearUsuario.Designer.cs">
       <DependentUpon>FormCrearUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInterfaz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCrearUsuario.resx">
       <DependentUpon>FormCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInterfaz.resx">
       <DependentUpon>FormInterfaz.cs</DependentUpon>
@@ -129,6 +138,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca_Clases\Biblioteca_Clases.csproj">
+      <Project>{f07af76c-61bd-4978-8672-35c0c0d702a7}</Project>
+      <Name>Biblioteca_Clases</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

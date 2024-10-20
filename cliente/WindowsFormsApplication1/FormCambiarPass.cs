@@ -14,11 +14,13 @@ namespace WindowsFormsApplication1
 {
     public partial class FormCambiarPass : Form
     {
+        //=========================================================================================================================\\
+        //======================================================= ATRIBUTOS =======================================================\\
+       
         private Socket server;
-        public FormCambiarPass()
-        {
-            InitializeComponent();
-        }
+
+        //=========================================================================================================================\\
+        //======================================================== MÉTODOS ========================================================\\
         public FormCambiarPass(Socket serverSocket)
         {
             InitializeComponent();
@@ -31,14 +33,14 @@ namespace WindowsFormsApplication1
             {
                 try
                 {
-                    string msgUsuario = NewUsertextBox1.Text;                                                            //Preparamos el mensaje concatenando el usuario y la contraseña con un delimitador "/"
+                    string msgUsuario = NewUsertextBox1.Text; // Preparamos el mensaje concatenando el usuario y la contraseña con un delimitador "/"
                     string msgContraseña = NewPasstextBox3.Text;
                     string mensaje = "CAMBIAR_PASS/" + msgUsuario + "/" + msgContraseña;
 
                     byte[] msg = System.Text.Encoding.ASCII.GetBytes(mensaje);
                     server.Send(msg);
 
-                    byte[] buffer = new byte[256];                                                                              //Recibimos respuesta
+                    byte[] buffer = new byte[256]; // Recibimos respuesta
                     int bytesRecibidos = server.Receive(buffer);
                     string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
                     MessageBox.Show("Respuesta del servidor: " + respuesta);
@@ -62,6 +64,11 @@ namespace WindowsFormsApplication1
             {
                 MessageBox.Show("Codigo de jugador erroneo");
             }
+        }
+
+        private void FormCambiarPass_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

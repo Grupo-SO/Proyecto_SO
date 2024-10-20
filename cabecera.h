@@ -9,6 +9,8 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <pthread.h>  // Necesario para trabajar con hilos
+
 
 // Declaración de variables globales con `extern`
 extern char *usuario;

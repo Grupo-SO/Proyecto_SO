@@ -1,19 +1,34 @@
 /*
  Codigo del servidor del juego
- Editado por ultima vez: 5/10/2024
+ Editado por ultima vez: 20/10/2024
  Autores: Adria Sancho, Ivan de Dios, Arnau Torrent y Oscar Rigol
 */
 
 #include "cabecera.h"
 
-void *AtenderCliente(void*socket){
-	//Definir el mutex
-	//pthread_mutex_t db_mutex = PTHREAD_MUTEX_INITIALIZER;
+/*==============================================================================================================================*/
+/*====================================================== Variables globales ====================================================*/
 
+#define MAX_USERS 100  
+int num_usuarios_conectados = 0;// Contador de usuarios conectados 
+
+// Estructura para almacenar la información de cada usuario conectado
+typedef struct {
+	int socket;
+	char nombre_usuario[50];  // Nombre del usuario (tamaño estimado)
+} UsuarioInfo;
+
+// Arreglo para almacenar la información de los usuarios conectados
+UsuarioInfo usuarios_conectados[MAX_USERS];
+
+/*==============================================================================================================================*/
+/*=================================================== Funcion atender cliente ==================================================*/
+void *AtenderCliente(void*socket){
+	
 	/*==============================================================================================================================*/
 	/*============================================ Declaracion de constantes y variables ===========================================*/
 
-	// Variables globales
+	// Variables de socket
 	int sock_conn;
 	int *s;
 	s= (int *) socket;
@@ -22,11 +37,13 @@ void *AtenderCliente(void*socket){
 	int terminar = 0;	
 												
 	char buff[512];
-	char *usuario = NULL;
-	char *contrasena = NULL;
+	char *usuario;
+	char *contrasena;
 	char *userDB;
 	char *passDB;
-
+	           
+	pthread_mutex_t lista_mutex = PTHREAD_MUTEX_INITIALIZER;
+	
 	// Definicion de variables para la connexion con la base de datos
 	MYSQL *conn;
 	MYSQL_RES *resultado;
@@ -55,8 +72,44 @@ void *AtenderCliente(void*socket){
 
 	/*==============================================================================================================================*/
 	/*============================================= Funciones-query preestablecidas ================================================*/
-
-	// Funcion para cambiar la contrase a del usuario
+	
+	// Funcion para añadir el usuario a la lista de conectados
+	void anadir_usuario() {
+		pthread_mutex_lock(&lista_mutex);  // Bloquear el mutex
+		
+		// Asegúrate de que no se exceda el número máximo de usuarios
+		if (num_usuarios_conectados < MAX_USERS) {
+			// Almacenar el socket y el nombre del usuario en la estructura
+			usuarios_conectados[num_usuarios_conectados].socket = sock_conn;
+			strncpy(usuarios_conectados[num_usuarios_conectados].nombre_usuario, usuario, sizeof(usuarios_conectados[num_usuarios_conectados].nombre_usuario) - 1);
+			usuarios_conectados[num_usuarios_conectados].nombre_usuario[sizeof(usuarios_conectados[num_usuarios_conectados].nombre_usuario) - 1] = '\0'; // Asegurar terminación nula
+			
+			num_usuarios_conectados++;
+			printf("Jugador conectado: %s\n", usuario);
+		}
+		pthread_mutex_unlock(&lista_mutex);  // Liberar el mutex
+	}
+	
+	// Funcion para quitar el usuario de la lista de conectados
+	void quitar_usuario(int socket) {
+		pthread_mutex_lock(&lista_mutex);  // Bloquear el mutex
+		printf("Intentando eliminar el usuario con socket: %d\n", socket);
+		
+		for (int i = 0; i < num_usuarios_conectados; i++) {
+			if (usuarios_conectados[i].socket == socket) {
+				// Mover los elementos hacia la izquierda
+				for (int j = i; j < num_usuarios_conectados - 1; j++) {
+					usuarios_conectados[j] = usuarios_conectados[j + 1];
+				}
+				printf("Jugador desconectado: %s\n", usuarios_conectados[i].nombre_usuario);
+				num_usuarios_conectados--;
+				break;
+			}
+		}
+		pthread_mutex_unlock(&lista_mutex);  // Liberar el mutex
+	}
+	
+	// Funcion para cambiar la contraseña del usuario
 	void buscarUserAndChangePassBBDD(){
 		conectarMySQL();
 		entrarBD();
@@ -101,12 +154,12 @@ void *AtenderCliente(void*socket){
 			// Ejecutamos la consulta de actualizaci n
 			err = mysql_query(conn, query);
 			if (err != 0){
-				printf("Error al actualizar la contrase a: %u %s\n", mysql_errno(conn), mysql_error(conn));
+				printf("Error al actualizar la contraseña: %u %s\n", mysql_errno(conn), mysql_error(conn));
 				char respuesta[] = "ERROR_ACTUALIZACION";
 				write(sock_conn, respuesta, strlen(respuesta));
 			} 
 			else {
-				printf("Contrase a actualizada para el usuario: %s\n", usuario);
+				printf("Contraseña actualizada para el usuario: %s\n", usuario);
 				char respuesta[] = "OK";
 				write(sock_conn, respuesta, strlen(respuesta));
 			}
@@ -164,6 +217,7 @@ void *AtenderCliente(void*socket){
 			// Enviar "OK" al cliente si las credenciales son v lidas
 			char respuesta[] = "OK";
 			printf("OK\n");
+			anadir_usuario();
 			write(sock_conn, respuesta, strlen(respuesta));
 		} 
 		else {
@@ -209,7 +263,7 @@ void *AtenderCliente(void*socket){
 			exit(1);
 		}
 		
-		// Insertamos el usuario y la contrase a predeterminados
+		// Insertamos el usuario y la contraseña predeterminados
 		char query[512];
 		snprintf(query, sizeof(query), "INSERT INTO Usuarios (usuario, contrasena) VALUES ('root', 'root')");
 		
@@ -251,7 +305,7 @@ void *AtenderCliente(void*socket){
 			write(sock_conn, respuesta, strlen(respuesta));
 		} 
 		else {
-			// Enviar "ERROR" al cliente si no son v lidas
+			// Enviar "ERROR" al cliente si no son validas
 			char respuesta[] = "ERROR";
 			printf("Usuario no encontrado, ERROR\n");
 			write(sock_conn, respuesta, strlen(respuesta));
@@ -282,7 +336,7 @@ void *AtenderCliente(void*socket){
 			row = mysql_fetch_row(resultado);
 			if (row != NULL){
 				totalUsuarios = atoi(row[0]);
-				printf("El n mero total de usuarios es: %d\n", totalUsuarios);
+				printf("El numero total de usuarios es: %d\n", totalUsuarios);
 			}
 			
 			// Liberamos el resultado
@@ -290,7 +344,25 @@ void *AtenderCliente(void*socket){
 		}
 		return totalUsuarios;
 	}
-
+	
+	// Funcion para obtener la lista de jugadores online
+	void obtener_lista_usuarios() {
+		pthread_mutex_lock(&lista_mutex);  // Bloquear el mutex
+		
+		// Asumiendo que MAX_USERS y el tamaño del buffer se definen apropiadamente
+		char respuesta[1024];
+		strcpy(respuesta, "USUARIOS_CONECTADOS/");
+		
+		for (int i = 0; i < num_usuarios_conectados; i++) {
+			strcat(respuesta, usuarios_conectados[i].nombre_usuario);
+			if (i < num_usuarios_conectados - 1) {
+				strcat(respuesta, ",");
+			}
+		}
+		pthread_mutex_unlock(&lista_mutex);  // Liberar el mutex
+		write(sock_conn, respuesta, strlen(respuesta));  // Enviar la lista al cliente
+	}
+		
 	/*==============================================================================================================================*/
 	/*============================== Funciones para procesar los mensajes recibidos desde el cliente ===============================*/
 
@@ -327,7 +399,7 @@ void *AtenderCliente(void*socket){
 		contrasena = strtok(NULL, "/");
 		
 		if (usuario && contrasena){
-			printf("Usuario: %s, Contrase a: %s\n", usuario, contrasena);
+			printf("Usuario: %s, Contraseña: %s\n", usuario, contrasena);
 			printf("Autenticando usuario: %s\n", usuario);
 			buscarUserAndPassBBDD();
 		}
@@ -353,7 +425,7 @@ void *AtenderCliente(void*socket){
 		}
 	}
 
-	// Mensaje para a adir un usuario
+	// Mensaje para a anadir un usuario
 	void mensaje_addUser(char*mensaje){
 		
 		// Extraemos el usuario y la contrase a del mensaje
@@ -373,6 +445,14 @@ void *AtenderCliente(void*socket){
 			char respuesta[] = "ERROR";												
 			write(sock_conn, respuesta, strlen(respuesta));						
 		}
+	}
+	
+	// Mensaje para listar usuarios conectados
+	void mensaje_listarUsuarios() {
+		printf("Recibido mensaje para listar usuarios conectados\n");
+		conectarMySQL();
+		entrarBD();
+		obtener_lista_usuarios();
 	}
 
 	/*==============================================================================================================================*/
@@ -400,19 +480,21 @@ void *AtenderCliente(void*socket){
 		else if (strncmp(mensaje, "ADD_USER/", 9) == 0){
 			mensaje_addUser(mensaje);
 		}
-		/*
+		// Mensaje para listar usuarios conectados
+		else if (strcmp(mensaje, "LISTAR_USUARIOS") == 0) {
+			mensaje_listarUsuarios();
+		}
 		// En caso de comando no reconocido
 		else {
-			char respuesta[] = "COMANDO_NO_RECONOCIDO";  							
+			char respuesta[] = "COMANDO_NO_RECONOCIDO";                                 
 			write(sock_conn, respuesta, strlen(respuesta));
 			printf("Comando no reconocido: %s\n", mensaje);
 		}
-		*/
 	}
 	
 	// Funcion para obtener el mensaje del cliente
 	void obtener_mensajeCliente(){
-		char buff[512];
+		//char buff[512];
 		int ret;
 		
 		while ((ret = read(sock_conn, buff, sizeof(buff))) > 0){
@@ -424,7 +506,7 @@ void *AtenderCliente(void*socket){
 		}
 		
 		if (ret == 0) {
-			printf("El cliente ha cerrado la conexion.\n");
+			quitar_usuario(sock_conn);
 			terminar = 1;
 		} 
 		else {
@@ -439,9 +521,6 @@ void *AtenderCliente(void*socket){
 	// Se acabo el servicio para este cliente
 	close(sock_conn); 
 }
-/*==============================================================================================================================*/
-/*======================================== Funciones para la comunicacion con el cliente =======================================*/
-
 
 /*==============================================================================================================================*/
 /*============================================================ MAIN ============================================================*/
