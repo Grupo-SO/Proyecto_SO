@@ -1,7 +1,7 @@
-DROP DATABASE IF EXIST Usuarios;
-CREATE DATABASE M3_Usuarios;
+DROP DATABASE IF EXIST UsuariosBBDD;
+CREATE DATABASE M3_UsuariosBBDD;
 
-USE M3_Usuarios;
+USE M3_UsuariosBBDD;
 
 CREATE TABLE Usuarios (
 	id int primary key not null auto_increment, 
