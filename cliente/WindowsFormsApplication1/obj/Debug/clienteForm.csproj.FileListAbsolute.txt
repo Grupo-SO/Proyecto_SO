@@ -129,3 +129,7 @@ C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyec
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormGame.resources
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormInterfaz.resources
+C:\share\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.dll
+C:\share\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.pdb
+C:\share\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormGame.resources
+C:\share\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteF.7CC6B152.Up2Date

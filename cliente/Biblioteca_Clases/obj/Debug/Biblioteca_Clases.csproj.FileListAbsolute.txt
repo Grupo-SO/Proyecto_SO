@@ -10,3 +10,9 @@ C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyec
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.csproj.CoreCompileInputs.cache
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.dll
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.pdb
+C:\share\Proyecto\cliente\Biblioteca_Clases\bin\Debug\Biblioteca_Clases.dll
+C:\share\Proyecto\cliente\Biblioteca_Clases\bin\Debug\Biblioteca_Clases.pdb
+C:\share\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.csproj.AssemblyReference.cache
+C:\share\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.csproj.CoreCompileInputs.cache
+C:\share\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.dll
+C:\share\Proyecto\cliente\Biblioteca_Clases\obj\Debug\Biblioteca_Clases.pdb

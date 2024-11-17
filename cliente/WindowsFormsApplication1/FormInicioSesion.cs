@@ -17,7 +17,8 @@ namespace WindowsFormsApplication1
         //======================================================= ATRIBUTOS =======================================================\\
 
         Socket server; // Creamos objeto de la clase Socket (librerias)
-        string servidor_ip = "192.168.1.37"; // IP del servidor
+        string servidor_ip = "10.4.119.5"; // IP del servidor
+        int puerto = 50003; // Puerto del servidor
 
         //=========================================================================================================================\\
         //======================================================== MÉTODOS ========================================================\\
@@ -29,7 +30,7 @@ namespace WindowsFormsApplication1
         private void Form1_Load(object sender, EventArgs e)
         {
             IPAddress direc = IPAddress.Parse(servidor_ip); // Creamos un IPEndPoint con el ip del servidor y puerto del servidor 
-            IPEndPoint ipep = new IPEndPoint(direc, 20518);
+            IPEndPoint ipep = new IPEndPoint(direc, puerto);
             label1.Text = "IP: " + servidor_ip;
 
             server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); // Creamos Socket

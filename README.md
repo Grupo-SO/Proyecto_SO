@@ -1,11 +1,19 @@
 # Proyecto_SO
 
-Versión 1
-_______________________________________________________________________________________________________________________________________
-Primera entrega del proyecto de Sistemas Operativos. El programa permite borrar/crear de nuevo la base de datos, añadir un usuario, 
-cambiar la contraseña del usuario y contar el número de usuarios registrados en la base. Es imperativo que el archivo cabecera.h 
-esté ubicado en la misma carpeta que el archivo Servidor.c, pues contiene todas las referencias #include usadas en el script principal.
+Versión 2
+____________________________________________________________________________________________________________________________________________
+Segunda entrega del proyecto de sistemas operativos. Se han añadido threads, acceso excluyente y la primera versión de la interfaz gráfica 
+del juego, aunque por ahora no es posible jugar con otros usuarios. También incluye la opción de obtener una tabla con los usuarios 
+conectados. 
 
-Link del vídeo (por Adrià Sancho): https://drive.google.com/file/d/1s2f-D0f24kfd1uPjDXSAGwhHYptINtJJ/view?usp=sharing
-_______________________________________________________________________________________________________________________________________
+Para probar el cliente, cambiad la dirección IP del servidor en el form "FormInicioSesion".
+
+- Link al vídeo de la tabla (por Iván de Dios): https://drive.google.com/file/d/1ZcMd0V6YVBFr9k-VryvlkRXBTy59Uvdp/view?usp=sharing
+- Link al vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing
+____________________________________________________________________________________________________________________________________________
+
+- Versión 2 subida por Óscar
+- Versión 2 verificada por Adrià, Ivan, Arnau
+- Versión 2 comunicada por Iván, Óscar
+
 Proyecto desarrollado por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
