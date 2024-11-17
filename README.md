@@ -10,8 +10,10 @@ Para probar el cliente, cambiad la dirección IP del servidor en el form "FormIn
 
 ____________________________________________________________________________________________________________________________________________
 
-- Versión 2 subida por Óscar
-- Versión 2 verificada por Adrià, Ivan
-- Versión 2 comunicada por Arnau
+- Versión 4 subida por Óscar
+- Versión 4 verificada por Adrià, Ivan
+- Versión 4 comunicada por Arnau
+
+- Vídeo de la versión 4 (por Arnau): https://drive.google.com/file/d/1ys9sXuwPamQ3l1u0e8BC5CIqyi43tOMF/view?usp=sharing
 
 Proyecto desarrollado por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
