@@ -1,19 +1,17 @@
 # Proyecto_SO
 
-Versión 2
+Versión 4
 ____________________________________________________________________________________________________________________________________________
-Segunda entrega del proyecto de sistemas operativos. Se han añadido threads, acceso excluyente y la primera versión de la interfaz gráfica 
-del juego, aunque por ahora no es posible jugar con otros usuarios. También incluye la opción de obtener una tabla con los usuarios 
-conectados. 
+Cuarta entrega del proyecto de sistemas operativos. Se ha añadido la opción de poder invitar a partida a otros jugadores, además de todo
+lo relativo a la versión 3 que finalmente funciona ya. Facilitamos un source sql UsuariosBBDD para crear localmente una base de datos con
+un puñado de jugadores, aunque la base de datos se encuentra correctamente subida a shiva2 con las demás.
 
 Para probar el cliente, cambiad la dirección IP del servidor en el form "FormInicioSesion".
 
-- Link al vídeo de la tabla (por Iván de Dios): https://drive.google.com/file/d/1ZcMd0V6YVBFr9k-VryvlkRXBTy59Uvdp/view?usp=sharing
-- Link al vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing
 ____________________________________________________________________________________________________________________________________________
 
 - Versión 2 subida por Óscar
-- Versión 2 verificada por Adrià, Ivan, Arnau
-- Versión 2 comunicada por Iván, Óscar
+- Versión 2 verificada por Adrià, Ivan
+- Versión 2 comunicada por Arnau
 
 Proyecto desarrollado por Iván de Dios, Adrià Sancho, Arnau Torrent y Óscar Rigol
