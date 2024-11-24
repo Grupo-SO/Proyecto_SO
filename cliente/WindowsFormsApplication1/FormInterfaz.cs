@@ -18,6 +18,8 @@ namespace WindowsFormsApplication1
 
         private Socket server; // Socket para la conexión con el servidor
         private string usuario; // Nombre del usuario que juega
+        private List<string> lista_mensajes = new List<string>();
+
 
         //=========================================================================================================================\\
         //======================================================== MÉTODOS ========================================================\\
@@ -70,6 +72,7 @@ namespace WindowsFormsApplication1
 
                 // Iniciar la escucha de mensajes
                 await Task.Run(() => EscucharMensajesServidor());
+
             }
             catch (Exception ex)
             {
@@ -168,6 +171,36 @@ namespace WindowsFormsApplication1
                             MessageBox.Show($"{target_username} ha rechazado tu invitación.", "Invitación rechazada", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         });
                     }
+                    else if (respuesta == "HAS_SIDO_ASIGNADO_A_PARTIDA")
+                    {
+                        // Notificar al usuario que ha sido asignado a una partida
+                        this.Invoke((MethodInvoker)delegate
+                        {
+                            MessageBox.Show("Has sido asignado a una partida. La partida está iniciando...", "Asignado a Partida", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            // Iniciar la interfaz de juego
+                            //FormGame formGame = new FormGame(usuario);
+                            //formGame.ShowDialog();
+                            //this.Close();
+                        });
+                    }
+                    else if (respuesta.StartsWith("CHAT/"))
+                    {
+                        Console.WriteLine("Respuesta de chat recibida: " + respuesta);
+                        // Manejar mensajes de chat
+                        string[] partes = respuesta.Split(new[] { '/' }, 3);
+                        if (partes.Length >= 3)
+                        {
+                            string emisor = partes[1];
+                            string mensajeChat = partes[2];
+                            // Invocar el método para actualizar el chat en el hilo de la interfaz de usuario
+                            this.Invoke((MethodInvoker)delegate
+                            {
+                                // Añadir el mensaje al PictureBox
+                                lista_mensajes.Add($"{emisor}: {mensajeChat}");
+                                ActualizarChat();
+                            });
+                        }
+                    }
                     else
                     {
                         // Manejar otros tipos de respuestas si es necesario
@@ -209,6 +242,9 @@ namespace WindowsFormsApplication1
             {
                 dataGridViewJugadores.Rows.Add(usuario.Trim());
             }
+
+            lista_mensajes.Add(usuarios[usuarios.Length - 1] + " se ha unido!");
+            ActualizarChat();
         }
 
         private void invitarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -226,7 +262,7 @@ namespace WindowsFormsApplication1
                 }
 
                 // Enviar mensaje "INVITAR/<target_username>/<source_username>" al servidor
-                string mensaje = $"INVITAR/{target_username}/{source_username}";
+                string mensaje = $"INVITAR/{target_username}/{source_username}\n";
                 byte[] msg = Encoding.ASCII.GetBytes(mensaje);
                 try
                 {
@@ -240,5 +276,52 @@ namespace WindowsFormsApplication1
                 }
             }
         }
+
+        private void ActualizarChat() {
+
+            // Formato del string del mensaje
+            StringFormat string_formato = new StringFormat();
+            string_formato.LineAlignment = StringAlignment.Center;
+            string_formato.Alignment = StringAlignment.Center;
+            Font fuente = this.Font;
+            Brush color = Brushes.Black;
+
+            // Graphics del picturebox
+            Graphics g = chat_picturebox.CreateGraphics();
+            g.Clear(Color.White);
+
+            // Redibujar todos los strings
+            for (int i = 0; i < this.lista_mensajes.Count(); i++) {
+
+                int last_element = this.lista_mensajes.Count() - 1;
+                string mensaje = this.lista_mensajes[last_element - i];
+                Size tamaño_texto = TextRenderer.MeasureText(mensaje, fuente);
+                g.DrawString(mensaje, fuente, color, ((tamaño_texto.Width / 2) + 5), (chat_picturebox.Height - 10 -12*i), string_formato);
+            }
+            
+        }
+
+        private void send_button_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(chat_textbox.Text))
+            {
+                // Enviar mensaje al servidor en formato "CHAT/<mensaje>"
+                string mensaje = $"CHAT/{this.usuario}/{chat_textbox.Text}";
+                byte[] msg = Encoding.ASCII.GetBytes(mensaje);
+                try
+                {
+                    server.Send(msg);
+                    // Añadir el mensaje al chat local
+                    //this.lista_mensajes.Add($"{usuario}: {chat_textbox.Text}");
+                    ActualizarChat();
+                    chat_textbox.Clear();
+                }
+                catch (SocketException ex)
+                {
+                    MessageBox.Show($"Error al enviar el mensaje de chat: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
     }
 }

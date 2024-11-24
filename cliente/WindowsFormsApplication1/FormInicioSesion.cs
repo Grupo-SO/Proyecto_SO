@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
 
         Socket server; // Creamos objeto de la clase Socket (librerias)
         string servidor_ip = "10.4.119.5"; // IP del servidor
-        int puerto = 50003; // Puerto del servidor
+        int puerto = 50000; // Puerto del servidor
 
         //=========================================================================================================================\\
         //======================================================== MÉTODOS ========================================================\\
