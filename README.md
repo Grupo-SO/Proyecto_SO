@@ -8,7 +8,7 @@ Además, se ha implementado un historial de partidas en la base de datos accesib
 a la asignación de partidas, además de mejorar considerablemente la fluidez.
 
 - Versión final subida por Óscar
-- Versión final verificada por Adrià
+- Versión final verificada por Adrià, Ivan y Arnau
 - Versión final generada por Adrià y Óscar.
 
 ____________________________________________________________________________________________________________________________________________
