@@ -16,7 +16,7 @@ namespace WindowsFormsApplication1
     {
         //=========================================================================================================================\\
         //======================================================= ATRIBUTOS =======================================================\\
-       
+
         private Socket server;
 
         //=========================================================================================================================\\
@@ -43,26 +43,26 @@ namespace WindowsFormsApplication1
                     byte[] buffer = new byte[256]; // Recibimos respuesta
                     int bytesRecibidos = server.Receive(buffer);
                     string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
-                    MessageBox.Show("Respuesta del servidor: " + respuesta);
+                    MessageBox.Show("Respuesta del servidor: " + respuesta, "Respuesta del servidor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     if (respuesta == "OK")
                     {
-                        MessageBox.Show("Contraseña cambiada con éxito");
+                        MessageBox.Show("La contraseña se ha cambiado correctamente.", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
                     }
                     if (respuesta == "ERROR")
                     {
-                        MessageBox.Show("Este usuario no existe.");
+                        MessageBox.Show("No se encontró el usuario especificado.", "Error al cambiar contraseña", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (SocketException ex)
                 {
-                    MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Codigo de jugador erroneo");
+                MessageBox.Show("El código de jugador ingresado es incorrecto.", "Código incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

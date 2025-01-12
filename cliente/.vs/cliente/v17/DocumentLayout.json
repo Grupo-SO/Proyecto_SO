@@ -3,23 +3,42 @@
   "WorkspaceRootPath": "C:\\share\\Proyecto\\cliente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formcrearusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\share\\Proyecto\\Servidor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\share\\Proyecto\\Servidor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\adria\\AppData\\Local\\Temp\\.vsdbgsrc\\b757f522472b8a8a37afd3dba5401844a6d6aa23af65b9c3e845bbeaa0bb4011\\Control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|c:\\share\\proyecto\\cliente\\windowsformsapplication1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\formgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminterfaz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|C:\\share\\Proyecto\\cliente\\windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E08E40-5E04-41A2-AFB5-56E3E3274D24}|WindowsFormsApplication1\\clienteForm.csproj|solutionrelative:windowsformsapplication1\\forminiciosesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F07AF76C-61BD-4978-8672-35C0C0D702A7}|Biblioteca_Clases\\Biblioteca_Clases.csproj|C:\\share\\Proyecto\\cliente\\biblioteca_clases\\burbuja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F07AF76C-61BD-4978-8672-35C0C0D702A7}|Biblioteca_Clases\\Biblioteca_Clases.csproj|solutionrelative:biblioteca_clases\\burbuja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,7 +48,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,16 +56,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Servidor.c",
-              "DocumentMoniker": "C:\\share\\Proyecto\\Servidor.c",
-              "RelativeDocumentMoniker": "..\\Servidor.c",
-              "ToolTip": "C:\\share\\Proyecto\\Servidor.c",
-              "RelativeToolTip": "..\\Servidor.c",
-              "ViewState": "AgIAAOYCAAAAAAAAAAAmwPcCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-11-22T20:57:24.773Z",
+              "DocumentIndex": 1,
+              "Title": "FormCrearUsuario.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T17:09:36.93Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormCrearUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormCrearUsuario.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormCrearUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormCrearUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T17:09:34.467Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormInicioSesion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInicioSesion.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "WindowsFormsApplication1\\FormInicioSesion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T17:09:23.051Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -56,48 +99,83 @@
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInicioSesion.cs",
               "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInicioSesion.cs",
               "RelativeToolTip": "WindowsFormsApplication1\\FormInicioSesion.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAcwBQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T08:21:32.349Z",
+              "WhenOpened": "2024-12-18T19:10:03.194Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "Control.cs",
+              "DocumentMoniker": "C:\\Users\\adria\\AppData\\Local\\Temp\\.vsdbgsrc\\b757f522472b8a8a37afd3dba5401844a6d6aa23af65b9c3e845bbeaa0bb4011\\Control.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\adria\\AppData\\Local\\Temp\\.vsdbgsrc\\b757f522472b8a8a37afd3dba5401844a6d6aa23af65b9c3e845bbeaa0bb4011\\Control.cs",
+              "ToolTip": "C:\\Users\\adria\\AppData\\Local\\Temp\\.vsdbgsrc\\b757f522472b8a8a37afd3dba5401844a6d6aa23af65b9c3e845bbeaa0bb4011\\Control.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\Users\\adria\\AppData\\Local\\Temp\\.vsdbgsrc\\b757f522472b8a8a37afd3dba5401844a6d6aa23af65b9c3e845bbeaa0bb4011\\Control.cs [Solo lectura]",
+              "ViewState": "AgIAAO0WAAAAAAAAAAAAwPoWAAAEAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T17:46:06.829Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "FormGame.cs",
               "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormGame.cs",
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormGame.cs",
               "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormGame.cs",
               "RelativeToolTip": "WindowsFormsApplication1\\FormGame.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAgwAcAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAACMBAAAAAAAAAAAAADIBAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T12:17:05.975Z",
+              "WhenOpened": "2024-12-07T01:44:01.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "Servidor.c",
+              "DocumentMoniker": "C:\\share\\Proyecto\\Servidor.c",
+              "RelativeDocumentMoniker": "..\\Servidor.c",
+              "ToolTip": "C:\\share\\Proyecto\\Servidor.c",
+              "RelativeToolTip": "..\\Servidor.c",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-12-13T21:24:41.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FormInterfaz.cs",
               "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInterfaz.cs",
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInterfaz.cs",
               "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInterfaz.cs",
               "RelativeToolTip": "WindowsFormsApplication1\\FormInterfaz.cs",
-              "ViewState": "AgIAACMBAAAAAAAAAAAIwMYAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAC4CAAAAAAAAAAAIwEgCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T08:02:14.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-18T08:02:14.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "FormInterfaz.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInterfaz.cs",
               "RelativeDocumentMoniker": "WindowsFormsApplication1\\FormInterfaz.cs",
               "ToolTip": "C:\\share\\Proyecto\\cliente\\WindowsFormsApplication1\\FormInterfaz.cs [Dise\u00F1o]",
               "RelativeToolTip": "WindowsFormsApplication1\\FormInterfaz.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T15:04:35.293Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-12-18T22:25:33.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Burbuja.cs",
+              "DocumentMoniker": "C:\\share\\Proyecto\\cliente\\Biblioteca_Clases\\Burbuja.cs",
+              "RelativeDocumentMoniker": "Biblioteca_Clases\\Burbuja.cs",
+              "ToolTip": "C:\\share\\Proyecto\\cliente\\Biblioteca_Clases\\Burbuja.cs",
+              "RelativeToolTip": "Biblioteca_Clases\\Burbuja.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T15:05:46.007Z"
             }
           ]
         }

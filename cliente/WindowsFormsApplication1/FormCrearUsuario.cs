@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
         public FormCrearUsuario(Socket serverSocket)
         {
             InitializeComponent();
-            server = serverSocket;  
+            server = serverSocket;
         }
 
         private void CrearBDButton_Click(object sender, EventArgs e)
@@ -39,20 +39,20 @@ namespace WindowsFormsApplication1
                 byte[] buffer = new byte[256]; // Recibimos respuesta
                 int bytesRecibidos = server.Receive(buffer);
                 string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
-                MessageBox.Show("Respuesta del servidor: " + respuesta);
+                MessageBox.Show("Respuesta del servidor: " + respuesta, "Respuesta del servidor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 if (respuesta.Equals("OK", StringComparison.OrdinalIgnoreCase))
                 {
-                    MessageBox.Show("Base de datos creada correctamente.");
+                    MessageBox.Show("Base de datos creada correctamente.", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Error al crear la base de datos.");
+                    MessageBox.Show("Error al crear la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (SocketException ex)
             {
-                MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -70,20 +70,23 @@ namespace WindowsFormsApplication1
                 byte[] buffer = new byte[256]; // Recibimos
                 int bytesRecibidos = server.Receive(buffer);
                 string respuesta = System.Text.Encoding.ASCII.GetString(buffer, 0, bytesRecibidos).Trim();
-                MessageBox.Show("Respuesta del servidor: " + respuesta);
 
                 if (respuesta.Equals("OK", StringComparison.OrdinalIgnoreCase))
                 {
-                    MessageBox.Show("Usuario añadido correctamente.");
+                    MessageBox.Show("Usuario añadido correctamente.", "Operación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (respuesta.Equals("Existe", StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show("El usuario ya existe.", "Usuario duplicado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
-                    MessageBox.Show("Error al añadir usuario.");
+                    MessageBox.Show("Error al añadir usuario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (SocketException ex)
             {
-                MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error al cerrar la conexión: {ex.Message}", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -93,3 +96,4 @@ namespace WindowsFormsApplication1
         }
     }
 }
+

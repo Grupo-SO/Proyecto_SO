@@ -132,7 +132,6 @@ C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemes Operatius\Proyec
 C:\share\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.dll
 C:\share\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\Biblioteca_Clases.pdb
 C:\share\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.FormGame.resources
-C:\share\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteF.7CC6B152.Up2Date
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
@@ -151,3 +150,4 @@ C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proye
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteF.7CC6B152.Up2Date
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\rigol\Desktop\Óscar Rigol\UPC\Quatrimestre 5\Sistemas Operativos\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\share\Proyecto\cliente\WindowsFormsApplication1\obj\Debug\clienteF.7CC6B152.Up2Date

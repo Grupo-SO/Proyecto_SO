@@ -35,23 +35,24 @@
             // fondo_box
             // 
             this.fondo_box.Location = new System.Drawing.Point(0, 0);
+            this.fondo_box.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.fondo_box.Name = "fondo_box";
-            this.fondo_box.Size = new System.Drawing.Size(850, 500);
+            this.fondo_box.Size = new System.Drawing.Size(2267, 1192);
             this.fondo_box.TabIndex = 0;
             this.fondo_box.TabStop = false;
-            this.fondo_box.Click += new System.EventHandler(this.fondo_box_Click);
             this.fondo_box.MouseEnter += new System.EventHandler(this.fondo_box_MouseEnter);
             this.fondo_box.MouseLeave += new System.EventHandler(this.fondo_box_MouseLeave);
             // 
             // FormGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 500);
+            this.ClientSize = new System.Drawing.Size(2267, 1192);
             this.Controls.Add(this.fondo_box);
-            this.Margin = new System.Windows.Forms.Padding(1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormGame";
             this.Text = "FormGame";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormGame_FormClosing);
             this.Load += new System.EventHandler(this.FormGame_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.FormGame_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.fondo_box)).EndInit();
