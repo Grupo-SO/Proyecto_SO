@@ -1,4 +1,18 @@
 # Proyecto_SO
+Versión final
+____________________________________________________________________________________________________________________________________________
+Entrega final del proyecto de sistemas operativos. Se han añadido las últimas mecánicas del juego, además de un sistema de doble protocolo 
+que se vale de TCP para enviar los mensajes de más importancia y UDP para aquellos que se envian constantemente (posición del jugador). 
+
+Además, se ha implementado un historial de partidas en la base de datos accesible desde el cliente y se han reparado varios errores relativos 
+a la asignación de partidas, además de mejorar considerablemente la fluidez.
+
+- Versión final subida por Óscar
+- Versión final verificada por Adrià
+- Versión final generada por Adrià y Óscar.
+
+_______________________________________________________. Versiones anteriores ._____________________________________________________________
+
 
 Versión 5
 ____________________________________________________________________________________________________________________________________________
