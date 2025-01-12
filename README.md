@@ -27,7 +27,7 @@ Para probar el cliente, cambiad la dirección IP del servidor en el form "FormIn
 - Versión 5 verificada por Adrià, Ivan
 - Versión 5 comunicada por Adrià
 
-Vídeo de la versión 5 (por Arià): https://drive.google.com/file/d/1LZ-offYfk1-JuvITasX6kycpybuCCXFY/view?usp=sharing
+Vídeo de la versión 5 (por Arià): https://drive.google.com/file/d/1LZ-offYfk1-JuvITasX6kycpybuCCXFY/view?usp=sharing  
 ____________________________________________________________________________________________________________________________________________
 
 Versión 4 (y 3)
@@ -42,7 +42,7 @@ Para probar el cliente, cambiad la dirección IP del servidor en el form "FormIn
 - Versión 4 verificada por Adrià, Ivan
 - Versión 4 comunicada por Arnau
 
-Vídeo de la versión 4 (por Arnau): https://drive.google.com/file/d/1ys9sXuwPamQ3l1u0e8BC5CIqyi43tOMF/view?usp=sharing
+Vídeo de la versión 4 (por Arnau): https://drive.google.com/file/d/1ys9sXuwPamQ3l1u0e8BC5CIqyi43tOMF/view?usp=sharing  
 ____________________________________________________________________________________________________________________________________________
 
 Versión 2
@@ -57,8 +57,8 @@ Para probar el cliente, cambiad la dirección IP del servidor en el form "FormIn
 - Versión 2 verificada por Adrià, Ivan
 - Versión 2 comunicada por Iván, Óscar
 
-Vídeo de la tabla (por Iván de Dios): https://drive.google.com/file/d/1ZcMd0V6YVBFr9k-VryvlkRXBTy59Uvdp/view?usp=sharing
-Vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing
+Vídeo de la tabla (por Iván de Dios): https://drive.google.com/file/d/1ZcMd0V6YVBFr9k-VryvlkRXBTy59Uvdp/view?usp=sharing  
+Vídeo de la interfaz gráfica (por Óscar Rigol): https://drive.google.com/file/d/1xZ7l5VZAJwXCur-MjN3qjoVxaOZY2pZM/view?usp=sharing  
 ____________________________________________________________________________________________________________________________________________
 
 Versión 1
