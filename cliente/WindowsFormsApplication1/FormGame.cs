@@ -119,8 +119,8 @@ namespace WindowsFormsApplication1
 
             if (!modoOffline)
             {
-                Enviar_Actualizacion_Estado();
                 Inicializar_TCP();
+                Enviar_Actualizacion_Estado();
             }
             else
             {
