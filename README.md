@@ -11,6 +11,8 @@ a la asignación de partidas, además de mejorar considerablemente la fluidez.
 - Versión final verificada por Adrià, Ivan y Arnau
 - Versión final generada por Adrià y Óscar.
 
+  Vídeo de la versión final: https://drive.google.com/file/d/1prq3P8-7nwpyegtVG-0obyuU5cD3ta-w/view?usp=sharing
+
 ____________________________________________________________________________________________________________________________________________
 _Versiones anteriores_
 ____________________________________________________________________________________________________________________________________________
